@@ -28,8 +28,13 @@ const options = {
     const today = new Date();
     if (selectedDate <= today) {
       iziToast.error({
-        title: 'Error',
-        message: 'Illegal operation',
+        message: 'Please choose a date in the future',
+        position: 'topRight',
+        backgroundColor: 'rgba(239, 64, 64, 1)',
+        messageColor: 'rgba(255, 255, 255, 1)',
+        iconUrl: '../img/icon-error.svg',
+        messageSize: '16px',
+        pauseOnHover: true,
       });
 
       btnStart.disabled = true;
@@ -84,7 +89,7 @@ function convertMs(ms) {
 }
 
 function updateTimer({ days, hours, minutes, seconds }) {
-  daysEl.textContent = days;
+  daysEl.textContent = addLeadingZero(days);
   hoursEl.textContent = addLeadingZero(hours);
   minutesEl.textContent = addLeadingZero(minutes);
   secondsEl.textContent = addLeadingZero(seconds);

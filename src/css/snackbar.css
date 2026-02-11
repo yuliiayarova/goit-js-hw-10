@@ -1,0 +1,80 @@
+.form {
+  text-align: left;
+}
+
+.delay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    text-align: left;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+  }
+  input:hover {
+    border-color: #000;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #4e75ff;
+    color: #000;
+  }
+}
+
+fieldset {
+  width: 360px;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 24px;
+}
+
+fieldset:hover,
+fieldset:focus {
+  border-color: #000;
+}
+
+input[type='radio'] {
+  accent-color: #4e75ff;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 360px;
+  min-height: 40px;
+
+  background-color: #4e75ff;
+  border: 1px solid transparent;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 250ms ease-in;
+}
+
+.btn:hover {
+  background-color: #6c8cff;
+}

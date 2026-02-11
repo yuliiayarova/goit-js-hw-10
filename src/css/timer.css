@@ -1,11 +1,16 @@
-input {
-  border: 1px solid #808080;
-  border-radius: 4px;
-  width: 272px;
-  height: 40px;
-  padding: 8px 16px;
+body .flatpickr-calendar {
+  width: 280px;
+}
+
+#datetime-picker {
+  width: 280px;
   margin-bottom: 32px;
   margin-right: 8px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  padding: 8px 16px;
 
   font-family: Roboto;
   font-size: 16px;
@@ -13,22 +18,23 @@ input {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-input:hover {
+
+#datetime-picker:hover {
   border-color: #000;
 }
 
-input:focus {
+#datetime-picker:focus {
   outline: none;
   border-color: #4e75ff;
   color: #000;
 }
 
-input:disabled {
+#datetime-picker:disabled {
   border-color: #808080;
   color: #808080;
 }
 
-button {
+.timer-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -50,11 +56,11 @@ button {
   transition: background-color 250ms ease-in;
 }
 
-button:hover {
+.timer-btn:hover {
   background-color: #6c8cff;
 }
 
-button:disabled {
+.timer-btn:disabled {
   background-color: #cfcfcf;
   color: #989898;
 }
@@ -62,7 +68,7 @@ button:disabled {
 .timer {
   display: flex;
   gap: 24px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .field {
